@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/index-logo.png" alt="City of Sedona" width="138" height="70">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="inner.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="sedona-promo">
+        <img src="img/promo.png" alt="Welcome to Sedona" width="458" height="352">
+      </div>
+
+      <h1 class="visually-hidden">Седона</h1>
+
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="features-text">
+          <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
+        <ul class="features-list">
+          <li class="feature-item">
+            <div class="feature-blue">
+              <div class="item-text">
+                <h3>Настоящий городок</h3>
+                <p class="feature-number">№1</p>
+                <p>Cедона — не аттракцион для туристов, там течет своя жизнь</p>
+              </div>
+              <img src="img/town.jpg" alt="Седона" width="800" height="256">
+            </div>
+            <ul class="feature-offers-list">
+              <li class="offer-item">
+                <h3>Жилье</h3>
+                <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="offer-item">
+                <h3>Еда</h3>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="offer-item">
+                <h3>Сувениры</h3>
+                <p>Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
+          </li>
+          <li class="feature-item feature-blue">
+            <div class="item-text item-text-right">
+              <h3>Там есть<br>Мост дьявола</h3>
+              <p class="feature-number">№2</p>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+            <img src="img/bridge.jpg" alt="Мост дьявола" width="800" height="256">
+          </li>
+          <li class="feature-item">
+            <h3>Небольшая площадь</h3>
+            <p class="feature-number">№3</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="feature-item">
+            <h3>Красивая дорога</h3>
+            <p class="feature-number">№4</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="feature-item">
+            <h3>Мало туристов</h3>
+            <p class="feature-number">№5</p>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="search">
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <div class="search-text">
+          <p>Заинтересовались?</p>
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        </div>
+        <div class="search-container">
+          <a class="button search-button" href="modal.html">Поиск гостиницы в Седоне</a>
+          <div class="modal-search">
+            <h2 class="visually-hidden">Поиск гостиницы</h2>
+            <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
+              <p class="search-item">
+                <label for="search-date-from">Дата заезда:</label>
+                <input type="text" name="date-from" value="" placeholder="24 апреля 2017" id="search-date-from">
+                <button type="button" class="button date-button">
+                  <span class="visually-hidden">Календарь</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22">
+                    <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363
+                    0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363
+                    0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363
+                    0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784
+                    22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437
+                    18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1
+                    .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0
+                    .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362
+                    0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" fill-opacity="0.3"/>
+                    <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594
+                    15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188
+                    11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781
+                    15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781
+                    8.225h2.625v2.066h-2.625z" fill-opacity="0.3"/>
+                  </svg>
+                </button>
+              </p>
+              <p class="search-item">
+                <label for="search-date-to">Дата выезда:</label>
+                <input type="text" name="date-to" value="" placeholder="4 июля 2017" id="search-date-to">
+                <button type="button" class="button date-button">
+                  <span class="visually-hidden">Календарь</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22">
+                    <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363
+                    0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363
+                    0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363
+                    0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784
+                    22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437
+                    18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1
+                    .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0
+                    .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362
+                    0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" fill-opacity="0.3"/>
+                    <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594
+                    15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188
+                    11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781
+                    15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781
+                    8.225h2.625v2.066h-2.625z" fill-opacity="0.3"/>
+                  </svg>
+                </button>
+              </p>
+              <p class="search-item search-item-number">
+                <label for="search-adults">Взрослые:</label>
+                <button type="button" class="button number-button-min">
+                  <span class="visually-hidden">Меньше</span>
+                </button>
+                <input type="text" name="adults" value="" placeholder="2" id="search-adults">
+                <button type="button" class="button number-button-plus">
+                  <span class="visually-hidden">Больше</span>
+                </button>
+              </p>
+              <p class="search-item search-item-number item-number-right">
+                <label for="search-children">Дети:</label>
+                <button type="button" class="button number-button-min">
+                  <span class="visually-hidden">Меньше</span>
+                </button>
+                <input type="text" name="children" value="" placeholder="0" id="search-children">
+                <button type="button" class="button number-button-plus">
+                  <span class="visually-hidden">Больше</span>
+                </button>
+              </p>
+              <button class="button modal-button" type="submit">Найти</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Седона на карте</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d695317.9047541741!2d-111.64269866005756!3d34.880628721364644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1522224529001"
+          width="1200" height="593" allowfullscreen>
+        </iframe>
+        <p>
+          <img src="img/map.jpg" alt="Аризона, Седона" width="1200" height="593">
+        </p>
+      </section>
+
+    </main>
+
+    <footer class="main-footer index-main-footer">
+      <p class="footer-hashtag">#visitsedona</p>
+      <div class="footer-social">
+        <ul>
+          <li>
+            <a class="social-button social-twitter" href="#">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-button social-fb" href="#">
+              <span class="visually-hidden">Фэйсбук</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-button social-youtube" href="#">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-copyright">
+        <span>Website by</span>
+        <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+          <span class="visually-hidden">HTML Academy</span>
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="115" height="41" viewBox="0 0 113 39">
+            <path d="M46.84 28.22a2.07 2.07 0 0 0 .58-.11v1.4a3.41 3.41 0 0 1-1.24.22
+            1.75 1.75 0 0 1-1.75-1 5.08 5.08 0 0 1-3.3 1.13c-1.59 0-3.06-.87-3.06-2.68 0-2.24
+            2.08-2.93 3.9-2.93a11.63 11.63 0 0 1 2.28.26v-.31c0-1.09-.8-1.86-2.3-1.86a7.79
+            7.79 0 0 0-3.15.67v-1.79a10.72 10.72 0 0 1 3.35-.58c2.48 0 4 1.18 4 3.83v3.14a.57.57
+            0 0 0 .69.61zm-6.76-1.19a1.42 1.42 0 0 0 1.64 1.29 3.56 3.56 0 0 0 2.53-1v-1.51a10.21
+            10.21 0 0 0-1.9-.22c-1.1.01-2.27.35-2.27 1.45zM53.06 20.62a5.29 5.29 0 0 1
+            2.7.67v1.79a4.28 4.28 0 0 0-2.42-.73 2.89 2.89 0 1 0 0 5.76 5.26 5.26 0 0 0
+            2.55-.67v1.8a6.58 6.58 0 0 1-2.9.6 4.42 4.42 0 0 1-4.72-4.54 4.54 4.54 0 0 1
+            4.79-4.68zM65.84 28.22a2.07 2.07 0 0 0 .58-.11v1.4a3.41 3.41 0 0 1-1.24.22 1.75
+            1.75 0 0 1-1.75-1 5.08 5.08 0 0 1-3.3 1.13c-1.59 0-3.06-.87-3.06-2.68 0-2.24
+            2.08-2.93 3.9-2.93a11.63 11.63 0 0 1 2.28.26v-.31c0-1.09-.8-1.86-2.3-1.86a7.79
+            7.79 0 0 0-3.15.67v-1.79a10.72 10.72 0 0 1 3.35-.58c2.48 0 4 1.18 4 3.83v3.14a.57.57
+            0 0 0 .69.61zm-6.76-1.19a1.42 1.42 0 0 0 1.64 1.29 3.56 3.56 0 0 0 2.53-1v-1.51a10.21
+            10.21 0 0 0-1.9-.22c-1.11.01-2.27.35-2.27 1.45zM76.67 16.85v12.76h-1.76v-1.39a4.07
+            4.07 0 0 1-3.35 1.62 4.62 4.62 0 0 1 0-9.22 4 4 0 0 1 3.15 1.37v-5.14h2zm-4.76 5.48a2.9
+            2.9 0 0 0 0 5.8 3 3 0 0 0 2.79-1.84v-2.13a3.06 3.06 0 0 0-2.79-1.83zM82.99 20.62c3.48
+            0 4.68 2.81 4.12 5.34h-6.58c.22 1.57 1.75 2.22 3.35 2.22a6.41 6.41 0 0 0 2.77-.62v1.68a7.5
+            7.5 0 0 1-3.14.6c-2.68 0-5-1.53-5-4.61a4.39 4.39 0 0 1 4.48-4.61zm.09 1.62a2.39 2.39
+            0 0 0-2.57 2.26h4.85a2.06 2.06 0 0 0-2.28-2.26zM89.1 29.61v-8.75h1.73v1.09a4 4 0 0 1 2.92-1.33
+            3 3 0 0 1 2.73 1.4 4.33 4.33 0 0 1 3.06-1.4 3.21 3.21 0 0 1 3.32 3.52v5.47h-2V24.2a1.67
+            1.67 0 0 0-1.73-1.84 2.94 2.94 0 0 0-2.17 1.18V29.61h-2V24.2a1.67 1.67 0 0 0-1.73-1.84
+            3.11 3.11 0 0 0-2.32 1.35v5.91h-2zM111.47 20.86h2l-4.1 9.93c-.95 2.28-2.19 3-3.52 3a5 5
+            0 0 1-1.15-.15v-1.66a3 3 0 0 0 .89.13c.95 0 1.66-.67 2.17-2l.18-.44-4.16-8.82h2.13l3
+            6.6zM40.66 1.53v5a4 4 0 0 1 2.83-1.2A3.41 3.41 0 0 1 47.1 8.9v5.41h-2V9.15a1.9 1.9 0 0
+            0-2-2.1 3.08 3.08 0 0 0-2.44 1.46v5.8h-2V1.53h2zM52.43 2.42v3.12h3.17v1.71h-3.17v4c0
+            1.15.53 1.53 1.66 1.53a4.71 4.71 0 0 0 1.77-.35v1.68a7.14 7.14 0 0 1-2.35.38 2.68 2.68
+            0 0 1-3-2.88V7.23h-1.6V5.52h1.57V2.88zM58.1 14.29V5.54h1.73v1.09a4 4 0 0 1 2.92-1.33 3
+            3 0 0 1 2.73 1.4 4.33 4.33 0 0 1 3.06-1.4 3.21 3.21 0 0 1 3.32 3.52v5.47h-2V8.88a1.67
+            1.67 0 0 0-1.73-1.84 2.94 2.94 0 0 0-2.17 1.18V14.29h-2V8.88a1.67 1.67 0 0 0-1.73-1.84
+            3.11 3.11 0 0 0-2.32 1.35v5.91h-2zM74.72 1.52h1.95v12.76h-1.95zM15.44.02h-.16L0 1.62v28l15.28
+            9.09 15.28-9.09v-28zm13.12 28.45l-13.28 7.9L2 28.47V16.99l13.22 7.87v1.43l-9.07-5.4v1.38l9.11
+            5.47v1.46l-9.1-5.42v1.38l9.11 5.47 9.19-5.5V19.22l4.1-2.45v11.67zm0-13.16l-3.65 2.14-1.68
+            1-8-4.76v1.38l6.84 4.07h-.06l-.15.09-1 .57-5.64-3.36v1.38l4.45 2.65-1.05.7-3.36-2v1.38l2.21
+            1.3-2.25 1.35-13.16-7.82 13.17-7.92zm0-1.39L15.21 6.05l-13.2 7.86V3.41l13.28-1.39 13.28
+            1.39v10.51z" fill="#231f20"/>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/script.min.js"></script>
+
+</body>
+
+</html>
