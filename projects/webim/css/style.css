@@ -732,13 +732,15 @@ img {
             justify-content: flex-start; }
   .simple-install__link {
     width: 33.3%; }
-    .simple-install__link:first-child .simple-install__number {
-      left: -48px; }
   .simple-install__number {
     font-size: 150px; }
   .simple-install__icon {
     left: 23%;
     top: 47%; } }
+
+@media (min-width: 1200px) {
+  .simple-install__link:first-child .simple-install__number {
+    left: -48px; } }
 
 .app-install__text {
   margin: 0 0 50px; }
