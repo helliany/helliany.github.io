@@ -560,7 +560,7 @@ img {
       top: 0;
       width: 42%;
       height: 100%;
-      background-image: url("../../img/bc-header.jpg");
+      background-image: url("../img/bc-header.jpg");
       background-repeat: no-repeat;
       background-position: top right; }
   .nav__list--menu {
