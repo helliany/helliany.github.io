@@ -603,8 +603,6 @@ img {
   .select2-container .select2-selection--multiple .select2-selection__rendered:hover .select2-selection__choice,
   .select2-container .select2-selection--multiple .select2-selection__rendered:focus .select2-selection__choice {
     color: #93c01f; }
-  .select2-container .select2-selection--multiple .select2-selection__rendered .select2-selection__choice:not(:first-child) {
-    display: none; }
   .select2-container .select2-selection--multiple .select2-selection__rendered::after {
     content: "";
     position: absolute;
@@ -613,6 +611,9 @@ img {
     width: 15px;
     height: 9px;
     background-image: url("../img/icon-arrow.svg"); }
+
+.select2-container .select2-selection--multiple[aria-expanded="true"] .select2-selection__rendered::after {
+  background-image: url(../img/icon-arrow-open.svg); }
 
 .select2-dropdown {
   background-color: white;
@@ -629,6 +630,31 @@ img {
 .select2-search {
   display: none; }
 
+.select2-selection--multiple .select2-search {
+  display: list-item;
+  border: none;
+  outline: none;
+  max-width: 100%;
+  padding-right: 30px; }
+
+.select2-search__field {
+  max-width: 100%;
+  border: none;
+  outline: none; }
+  .select2-search__field:hover, .select2-search__field:focus {
+    cursor: pointer; }
+  .select2-search__field:hover::-webkit-input-placeholder, .select2-search__field:focus {
+    color: #93c01f; }
+  .select2-search__field:hover:-ms-input-placeholder, .select2-search__field:focus {
+    color: #93c01f; }
+  .select2-search__field:hover::-ms-input-placeholder, .select2-search__field:focus {
+    color: #93c01f; }
+  .select2-search__field:hover::placeholder, .select2-search__field:focus {
+    color: #93c01f; }
+
+.select2-selection__choice + .select2-search {
+  display: none; }
+
 .select2-results {
   display: block; }
 
@@ -638,17 +664,17 @@ img {
   padding: 0; }
 
 .select2-results__option {
-  padding: 6px;
+  padding: 6px 10px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   webkit-user-select: none; }
 
-.select2-results__options[aria-multiselectable=true] .select2-results__option:not([aria-disabled=true]) {
+.select2-results__options[aria-multiselectable=true] .select2-results__option {
   position: relative;
   padding: 6px 3.5vw; }
-  .select2-results__options[aria-multiselectable=true] .select2-results__option:not([aria-disabled=true])::before {
+  .select2-results__options[aria-multiselectable=true] .select2-results__option::before {
     content: "";
     position: absolute;
     left: 18px;
@@ -657,9 +683,6 @@ img {
     height: 18px;
     border-radius: 3px;
     background-color: #f3f3f2; }
-
-.select2-results__options .select2-results__option[aria-disabled=true] {
-  display: none; }
 
 .select2-results__option[aria-selected] {
   cursor: pointer; }
@@ -724,7 +747,9 @@ img {
   font-weight: bold; }
 
 .select2-container--default .select2-selection--single .select2-selection__placeholder {
-  color: #999; }
+  color: #1e1e1e; }
+  .select2-container--default .select2-selection--single .select2-selection__placeholder:hover, .select2-container--default .select2-selection--single .select2-selection__placeholder:focus {
+    color: #93c01f; }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
   height: 18px;
@@ -827,7 +852,9 @@ img {
   padding: 0; }
 
 .select2-container--default .select2-results__option[aria-disabled=true] {
-  color: #1e1e1e; }
+  padding: 12px 10px;
+  color: #1e1e1e;
+  border-bottom: 1px solid #e2e2e2; }
 
 .select2-container--default .select2-results__option[aria-selected=true] {
   font-weight: 700; }
@@ -995,7 +1022,7 @@ input[type=checkbox].hidden {
   cursor: pointer; }
   .filter__label--min {
     border-right: none; }
-  .filter__label:hover, .filter__label:focus, .filter__label--hover {
+  .filter__label:hover, .filter__label:focus {
     border: 1px solid #93c01f; }
 
 .filter__rooms {
@@ -1075,6 +1102,10 @@ input[type=checkbox].hidden {
 
 .sort__select {
   border: none; }
+
+.sort__head {
+  padding: 6px;
+  border: 1px solid #e2e2e2; }
 
 .sort__wrapper-right {
   display: -webkit-box;
